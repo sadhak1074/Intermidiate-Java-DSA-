@@ -1,12 +1,11 @@
-public class practice{
-    public static void main(String[] args){
-        int n = 5 ;
-        int pos = 2;
-        int BitMask = 1<<pos;
-
-        int newBitmask = ~(BitMask);
-        int newNumber = newBitmask & n;
-
-        System.out.println(newNumber);
+import java.util.Scanner;
+public class practice {
+    public static void main(String[] args) {
+        int i = 0;
+        while (i < 10) {
+            System.out.println(i);
+            i++;
+        }
     }
+    
 }
