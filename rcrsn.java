@@ -1,23 +1,12 @@
 public class rcrsn{
-    public static int Calpower(int x, int n){
-        if(x == 0){
-            return 0;
+    public static int calGCD(int a, int b){
+        if (b == 0){
+            return a;
         }
-        if(n == 0){
-            return 1;
-        }
-
-        int pownm1 = Calpower(x, n-1);
-        int power=x*pownm1;
-        return power;
-        
-        
+        return calGCD(b, a%b);
     }
-    public static void main(String [] args) {
-        int x = 2;
-        int n = 5;
-        int ans = Calpower(x, n);
-        System.out.println(ans);
-        
+
+    public static void main(String[] args){
+        System.out.println("Ans: "+calGCD(2, 1));
     }
 }
